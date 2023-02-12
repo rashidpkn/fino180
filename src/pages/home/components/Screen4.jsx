@@ -13,9 +13,7 @@ function Screen4() {
                     <div className="w-80 h-20 border bg-[#eee] rounded-lg"></div>
                     <div className="w-80 h-20 border bg-[#eee] rounded-lg"></div>
                     <div className="w-80 h-20 border bg-[#eee] rounded-lg"></div>
-                    <div className="w-80 h-20 border bg-[#eee] rounded-lg"></div>
-                    <div className="w-80 h-20 border bg-[#eee] rounded-lg"></div>
-                    <div className="w-80 h-20 border bg-[#eee] rounded-lg"></div>
+                    
                 </div>
         </div>
     )

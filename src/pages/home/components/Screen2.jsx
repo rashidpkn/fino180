@@ -10,9 +10,9 @@ import { Link } from 'react-router-dom'
 
 function Screen2() {
     return (
-        <div className='p-[5%] space-y-5'>
+        <div className='p-2 py-5 md:p-[5%] space-y-5'>
             <h2 className='text-5xl font-medium text-center'>Trending Products</h2>
-            <div className="flex justify-center items-center gap-5 flex-wrap">
+            <div className="flex justify-center items-center gap-3 md:gap-5 flex-wrap">
                 <Category title={'Saving Accounts'} url='/saving-accounts' image={saving} />
                 <Category title={'Demat Accounts'} url='/demat-accounts' image={demat} />
                 <Category title={'Cards'} url='/cards' image={card} />

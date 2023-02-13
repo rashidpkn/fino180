@@ -10,7 +10,7 @@ function App() {
       <Route path='/' element={<><Navbar /><Outlet /><Footer /></>} >
         <Route index element={<Home />} />
       </Route>
-      <Route path='*' element={404} />
+      {/* <Route path='*' element={404} /> */}
     </Routes>
   )
 }

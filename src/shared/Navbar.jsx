@@ -1,12 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link,NavLink } from 'react-router-dom'
 import logo from '../asset/images/common/logo.png'
 import { cards, dematAccount, interestRate, inverstments, loan, savingAccount } from '../custom/Navbar'
 
 function Navbar() {
+    const [menu, setMenu] = useState(false)
     return (
-        <header className='sticky top-0 border-b z-50'>
-            <nav className=' hidden lg:flex h-20 bg-white w-full px-[5%] items-center justify-between'>
+        <header className='sticky top-0 border-b z-50 bg-white'>
+            <nav className=' hidden lg:flex h-20  w-full px-[5%] items-center justify-between'>
                 <div className="">
                     <img src={logo} className='w-28' alt="fino180.in logo" />
                 </div>
@@ -20,7 +21,7 @@ function Navbar() {
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
                             <Link to={'/interest-rate'}> Interest Rate </Link>
                             <MegaMenu sub={interestRate} />
-                            
+
                         </li>
 
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
@@ -59,14 +60,34 @@ function Navbar() {
                     </ul>
                 </div>
             </nav>
-            <nav className='flex lg:hidden'></nav>
+
+            <nav className='flex lg:hidden'>
+                <div className={`${menu ? 'h-full' : 'h-[75px]'} min-h-[75px] duration-500 bg-black/70 fixed z-50 text-white w-full`}>
+                    <div className="flex justify-end items-center w-full h-[75px] px-[5%]">
+                        <button onClick={() => setMenu(!menu)}>
+                            <img className='float-right ' src="https://codium.in/image/common/hamburger.svg" alt="" />
+                        </button>
+                    </div>
+                    <div className={`h-full w-full flex-col justify-center items-center text-2xl  gap-5 ${menu ? 'flex' : 'hidden'}`}>
+                        <NavLink to={'/'}> Home </NavLink>
+                        <NavLink to={'#'}> Saving Account </NavLink>
+                        <NavLink to={'#'}> Demat Account </NavLink>
+                        <NavLink to={'#'}> Interest Rate </NavLink>
+                        <NavLink to={'#'}> Inverstments </NavLink>
+                        <NavLink to={'#'}> Others </NavLink>
+                        <NavLink to={'#'}> Cards </NavLink>
+                        <NavLink to={'#'}> Blogs </NavLink>
+                    </div>
+                </div>
+            </nav>
+            <div className="block lg:hidden h-[75px]"></div>
         </header>
     )
 }
 
 export default Navbar
 
-const MegaMenu = ({ children,sub }) => {
+const MegaMenu = ({ children, sub }) => {
     return (
         <div className="fixed top-20 left-0 h-0 w-screen  group-hover:h-96  duration-500 overflow-hidden bg-[#EEEEEE]">
             <div className="flex flex-wrap gap-5 p-[5%]">

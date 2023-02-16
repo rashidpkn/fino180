@@ -7,7 +7,9 @@ import educationLoan from '../asset/images/common/navbar/education_loan.png'
 import personalLoan from '../asset/images/common/navbar/personal_loan.png'
 
 // dematAccount
+import checking from '../asset/images/common/navbar/checking_account.png'
 import saving from '../asset/images/common/navbar/saving.png'
+import money_market from '../asset/images/common/navbar/money_market_account.png'
 
 
 export const interestRate = [
@@ -42,7 +44,7 @@ export const dematAccount = [
     {
         title: 'Checking Account',
         url: '#',
-        image : ''
+        image : checking
     },
     {
         title: 'Saving Account',
@@ -53,7 +55,7 @@ export const dematAccount = [
     {
         title: 'Money Market Account',
         url: '#',
-        image : ''
+        image : money_market
     },
 ]
 

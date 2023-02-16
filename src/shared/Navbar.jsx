@@ -87,12 +87,12 @@ function Navbar() {
 
 export default Navbar
 
-const MegaMenu = ({ children, sub }) => {
+const MegaMenu = ({ sub }) => {
     return (
         <div className="fixed top-20 left-0 h-0 w-screen  group-hover:h-96  duration-500 overflow-hidden bg-[#EEEEEE]">
             <div className="flex flex-wrap gap-5 p-[5%]">
                 {
-                    sub.map(e => <Link to={e.url}><div style={{backgroundImage:`url(${e.image})`}} className="bg-cover hover:translate-y-5 duration-500 h-32 w-32 border border-[#666] rounded-xl hover:rounded-md flex text-center justify-center items-center text-black font-semibold text-lg">{e.title}</div></Link>)
+                    sub.map(e => <Link to={e.url}><div style={{backgroundImage:`url(${e.image})`}} className="bg-cover hover:translate-y-5 duration-500 h-32 w-32 border border-[#666] rounded-xl hover:rounded-md flex text-center justify-center items-center text-black font-semibold text-lg bg-center">{e.title}</div></Link>)
                 }
             </div>
         </div>

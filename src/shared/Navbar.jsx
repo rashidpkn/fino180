@@ -63,7 +63,7 @@ function Navbar() {
 
             <nav className='flex lg:hidden'>
                 <div className={`${menu ? 'h-full' : 'h-[75px]'} min-h-[75px] duration-500 bg-black/70 fixed z-50 text-white w-full`}>
-                    <div className="flex justify-end items-center w-full h-[75px] px-[5%]">
+                    <div className="flex justify-end items-center w-full h-[75px] px-[5%] bg-black">
                         <button onClick={() => setMenu(!menu)}>
                             <img className='float-right ' src="https://codium.in/image/common/hamburger.svg" alt="" />
                         </button>

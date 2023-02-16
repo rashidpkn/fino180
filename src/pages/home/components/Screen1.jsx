@@ -12,7 +12,7 @@ function Screen1() {
     <section className='lg:h-[calc(100vh-5rem)] w-full bg-[#eee] flex flex-col lg:flex-row justify-between items-center p-2 py-5 md:p-[5%]'>
       <div className="space-y-10">
         <h1 className='text-3xl lg:text-5xl  font-semibold text-center lg:text-left'>Compare & Apply</h1>
-        <p className='text-center lg:text-left'>Compare and Apply for Loans, Credit Cards, Bank Accounts, <br /> and other Investment Solutions.</p>
+        <p className='text-center lg:text-left'>Compare and Apply for Loans, Credit Cards, Bank Accounts, <br className='hidden lg:inline-block' /> and other Investment Solutions.</p>
         <div className="flex flex-wrap gap-3 md:gap-5 justify-center md:justify-start">
           <Category title={'Saving Accounts'} url='/saving-accounts' image={saving} />
           <Category title={'Demat Accounts'} url='/demat-accounts' image={demat} />

@@ -9,52 +9,52 @@ function Navbar() {
         <header className='sticky top-0 border-b z-50 bg-white'>
             <nav className=' hidden lg:flex h-20  w-full px-[5%] items-center justify-between'>
                 <div className="">
-                    <img src={logo} className='w-28' alt="fino180.in logo" />
+                    <img src={logo} className='w-28' alt="fino180.in logo" title='fino180.in logo' />
                 </div>
                 <div className="h-full text-[#666]">
                     <ul className="h-full flex justify-center items-center gap-5">
 
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
-                            <Link to={'/'}> Home </Link>
+                            <Link to={'/'} title={'Home'}> Home </Link>
                         </li>
 
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
-                            <Link to={'/interest-rate'}> Interest Rate </Link>
+                            <Link to={'/interest-rate'} title={'Interest Rate'}> Interest Rate </Link>
                             <MegaMenu sub={interestRate} />
 
                         </li>
 
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
-                            <Link to={'/demat-accounts'}> Demat Accounts </Link>
+                            <Link to={'/demat-accounts'} title={'Demat Accounts'}> Demat Accounts </Link>
                             <MegaMenu sub={dematAccount} />
                         </li>
 
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
-                            <Link to={'saving-accounts'}> Saving Accounts </Link>
+                            <Link to={'saving-accounts'} title={'Saving Accounts'}> Saving Accounts </Link>
                             <MegaMenu sub={savingAccount} />
                         </li>
 
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
-                            <Link to={'/cards'}> Cards </Link>
+                            <Link to={'/cards'} title={'Cards'}> Cards </Link>
                             <MegaMenu sub={cards} />
                         </li>
 
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
-                            <Link to={'/inverstments'}> Inverstments </Link>
+                            <Link to={'/inverstments'} title={'Inverstments'}> Inverstments </Link>
                             <MegaMenu sub={inverstments} />
                         </li>
 
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
-                            <Link to={'/loans'}> Loans </Link>
+                            <Link to={'/loans'} title={'Loans'}> Loans </Link>
                             <MegaMenu sub={loan} />
                         </li>
 
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
-                            <Link> Others </Link>
+                            <Link title='Others'> Others </Link>
                         </li>
 
                         <li className='h-full flex justify-center items-center cursor-pointer group'>
-                            <Link> Blogs </Link>
+                            <Link title='Blogs'> Blogs </Link>
                         </li>
 
                     </ul>
@@ -65,18 +65,18 @@ function Navbar() {
                 <div className={`${menu ? 'h-full' : 'h-[75px]'} min-h-[75px] duration-500 bg-black/70 fixed z-50 text-white w-full`}>
                     <div className="flex justify-end items-center w-full h-[75px] px-[5%] bg-black">
                         <button onClick={() => setMenu(!menu)}>
-                            <img className='float-right ' src="https://codium.in/image/common/hamburger.svg" alt="" />
+                            <img className='float-right ' src="https://codium.in/image/common/hamburger.svg" alt="hamburger" title='hamburger' />
                         </button>
                     </div>
                     <div className={`h-full w-full flex-col justify-center items-center text-2xl  gap-5 ${menu ? 'flex' : 'hidden'}`}>
-                        <NavLink to={'/'}> Home </NavLink>
-                        <NavLink to={'#'}> Saving Account </NavLink>
-                        <NavLink to={'#'}> Demat Account </NavLink>
-                        <NavLink to={'#'}> Interest Rate </NavLink>
-                        <NavLink to={'#'}> Inverstments </NavLink>
-                        <NavLink to={'#'}> Others </NavLink>
-                        <NavLink to={'#'}> Cards </NavLink>
-                        <NavLink to={'#'}> Blogs </NavLink>
+                        <NavLink to={'/'} title={'Home'}> Home </NavLink>
+                        <NavLink to={'#'} title={'Saving Account'}> Saving Account </NavLink>
+                        <NavLink to={'#'} title={'Demat Account'}> Demat Account </NavLink>
+                        <NavLink to={'#'} title={'Interest Rate'}> Interest Rate </NavLink>
+                        <NavLink to={'#'} title={'Inverstments'}> Inverstments </NavLink>
+                        <NavLink to={'#'} title={'Others'}> Others </NavLink>
+                        <NavLink to={'#'} title={'Cards'}> Cards </NavLink>
+                        <NavLink to={'#'} title={'Blogs'}> Blogs </NavLink>
                     </div>
                 </div>
             </nav>

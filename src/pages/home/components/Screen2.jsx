@@ -26,9 +26,9 @@ function Screen2() {
 export default Screen2
 
 const Category = ({ title, image, url }) => (
-    <Link to={url}>
+    <Link to={url} title={title}>
     <div className="p-3 px-5 rounded-xl border bg-white lg:hover:translate-y-5 duration-200 flex flex-col justify-center items-center gap-5">
-        <img src={image} className='w-28 lg:w-32' alt="" />
+        <img src={image} className='w-28 lg:w-32' alt={title} title={title} />
         <h3>{title}</h3>
     </div>
     </Link>

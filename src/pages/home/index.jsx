@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="">
       <Helmet>
-        <title>Home - Fino180</title>
+        <title>Home | Fino180 - Compare and Apply</title>
         <meta name="description" content="Fino180 is a website used for Compare and Apply for Loans, Credit Cards, Bank Accounts, and other Investment Solutions." />
       </Helmet>
       <Screen1 />

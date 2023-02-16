@@ -17,7 +17,7 @@ function Screen3() {
 
 export default Screen3
 
-const Features = ({gradient,title,desc}) => <div className={`${gradient} p-5 md:h-48  w-full md:w-56 shadow-lg rounded-xl lg:hover:translate-y-5 duration-200 bg-white space-y-3 md:space-y-5`}>
+const Features = ({gradient,title,desc}) => <article className={`${gradient} p-5 md:h-48  w-full md:w-56 shadow-lg rounded-xl lg:hover:translate-y-5 duration-200 bg-white space-y-3 md:space-y-5`}>
   <h3 className='text-center text-xl' >{title}</h3>
   <p  className='text-center text-sm opacity-70'>{desc}</p>
-</div>
+</article>

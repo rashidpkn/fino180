@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react'
-import { Outlet, Route, Routes, useLocation } from 'react-router-dom'
+import React from 'react'
+import { Outlet, Route, Routes } from 'react-router-dom'
 import Home from './pages/home'
 import Footer from './shared/Footer'
 import Navbar from './shared/Navbar'
-import ReactGA from 'react-ga'
-ReactGA.initialize('G-9BDRRC9RLK')
+// import ReactGA from 'react-ga'
+// ReactGA.initialize('G-9BDRRC9RLK')
 
 function App() {
-  const location = useLocation()
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search)
-  }, [location])
+  // const location = useLocation()
+  // useEffect(() => {
+  //   ReactGA.pageview(window.location.pathname + window.location.search)
+  // }, [location])
   
   return (
     <Routes>

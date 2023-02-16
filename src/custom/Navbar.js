@@ -1,38 +1,59 @@
+
+// interestRate
+import fd from '../asset/images/common/navbar/fd.png'
+import homeLoan from '../asset/images/common/navbar/home_loan.png'
+import carLoan from '../asset/images/common/navbar/car_loan.png'
+import educationLoan from '../asset/images/common/navbar/education_loan.png'
+import personalLoan from '../asset/images/common/navbar/personal_loan.png'
+
+// dematAccount
+import saving from '../asset/images/common/navbar/saving.png'
+
+
 export const interestRate = [
     {
         title: 'Fixed Deposit',
-        url: '#'
+        url: '#',
+        image:fd
     },
     {
         title: 'Home Loan',
-        url: '#'
+        url: '#',
+        image:homeLoan
     },
     {
         title: 'Car Loan',
-        url: '#'
+        url: '#',
+        image:carLoan
     },
     {
         title: 'Education Loan',
-        url: '#'
+        url: '#',
+        image:educationLoan
     },
     {
         title: 'Personal Loan',
-        url: '#'
+        url: '#',
+        image:personalLoan
     },
 ]
 
 export const dematAccount = [
     {
         title: 'Checking Account',
-        url: '#'
+        url: '#',
+        image : ''
     },
     {
         title: 'Saving Account',
-        url: '#'
+        url: '#',
+        image : saving
+
     },
     {
         title: 'Money Market Account',
-        url: '#'
+        url: '#',
+        image : ''
     },
 ]
 
